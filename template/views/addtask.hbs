@@ -1,0 +1,18 @@
+{{>header}}
+{{>nav}}
+<form class='form-control container my-3' action='/todos/addtask' method='post'>
+    <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input type="text" class="form-control" id="title"  name='title'>
+  </div>
+  <div class="mb-3">
+    <label for="desc" class="form-label">Description</label>
+    <input type="text" class="form-control" id="desc"  name='description'>
+  </div>
+   <div class="mb-3">
+    <label for="tok" class="form-label">token</label>
+    <input type="text" class="form-control" id="tok"  name='token'>
+  </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{{>footer}}
